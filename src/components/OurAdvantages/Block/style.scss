@@ -1,0 +1,41 @@
+.Block {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 435px;
+  height: 280px;
+  background-color: grey;
+  border-radius: 13px;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+
+  &__favorable-prices {
+    left: 0;
+    background-color: #B7D4FF;
+  }
+  &__online-no-commission {
+    left: 33%;
+    top: 60px;
+    background-color: #A0E6BA;
+  }
+  &__logistics {
+    right: 0;
+    top: 20px;
+    background-color: #FFDA70;
+  }
+  &__name {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 53px 40px;
+  }
+
+  &:hover {
+    
+  }
+}

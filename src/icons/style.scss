@@ -1,42 +1,51 @@
-.icon {
+.Icon {
   position: absolute;
 
-  &-bread {
+  &__bread {
     bottom: 0;
     right: 0;
   }
-  &-pasta {
+  &__pasta {
     width: 205px;
     height: 189px;
     right: 396px;
     top: 615px;
     transform: rotate(90deg);
   }
-  &-potato {
+  &__potato {
     height: 350px;
     right: 575.47px;
     bottom: 0;
   }
-  &-avocado {
+  &__avocado {
     height: 270px;
     right: 365px;
     top: 350px;
   }
-  &-grape {
+  &__grape {
     width: 178px;
     height: 262px;
     right: 0px;
     top: 127px;
   }
-  &-oli {
+  &__oli {
     height: 445px;
     right: 155px;
     top: 105px;
   }
-  &-orange {
+  &__orange {
     width: 170px;
     height: 170px;
     right: 21px;
     top: 403px;
+  }
+  &__favorable-prices {
+    padding: 30px 38px 0 0;
+  }
+  &__online-no-commission {
+    padding: 30px 38px 0 0;
+  }
+  &__logistics {
+    padding: 30px 38px 0 0;
   }
 }

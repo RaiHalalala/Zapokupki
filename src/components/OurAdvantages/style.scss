@@ -1,0 +1,35 @@
+@import '../../sta/typography';
+
+.Our-advantages {
+  position: relative;
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  &__cards {
+    position: relative;
+  }
+  &__text {
+    margin-bottom: 110px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__subtitle {
+    font-size: $fontSizeSubtitle;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+  &__title {
+    width: 409px;
+    height: 125px;
+    padding-right: 88px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fontSizeMain;
+    line-height: 25px;
+  }
+}

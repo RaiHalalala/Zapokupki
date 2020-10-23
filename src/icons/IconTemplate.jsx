@@ -6,10 +6,11 @@ const cx = cn.bind(style);
 
 const IconBread = ({className}) =>{ 
   const iconClass = cx(
-    "icon", 'icon-avocado'
+    "Icon", className
   )
+  const pathImg = className.split('__')[1];
   return(
-    <img className={iconClass} src={require('/home/raihan/Desktop/react-swiper/src/sta/avocado1.png')} alt="bread"/>
+    <img className={iconClass} src={require(`/home/raihan/Desktop/react-swiper/src/sta/${pathImg}.png`)} alt={pathImg}/>
   )}
 
 export default IconBread;

@@ -13,21 +13,29 @@
 
 #check {
   stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 3s ease-out forwards;
+  animation: dash 2.5s linear forwards;
 }
 
 @keyframes dash {
-  to {
-    stroke-dashoffset: 0;
+  0% {
+    stroke-dashoffset: -1000;
+  }
+  30% {
+    stroke-dashoffset: -750;
+  }
+  70% {
+    stroke-dashoffset: -200; 
+  }
+  100% {
+    stroke-dashoffset: 0; 
   }
 }
 
 .Main-banner {
   position: relative;
   background-color: #EEEBE3;
-  background-image: url(https://sun9-15.userapi.com/_-YxmUOs9XAhNOw7gd1A6-gPbYMVbAfskNL6Rw/B8IKPPgGKEY.jpg);
-  background-size: 100% 820px;
+  // background-image: url(https://sun9-15.userapi.com/_-YxmUOs9XAhNOw7gd1A6-gPbYMVbAfskNL6Rw/B8IKPPgGKEY.jpg);
+  // background-size: 100% 820px;
   height: 820px;
   width: 100%;
 
@@ -55,5 +63,6 @@
 }
 
 .container {
-  width: 1440px;
+  width: 1280px;
+  margin: 0 auto;
 }

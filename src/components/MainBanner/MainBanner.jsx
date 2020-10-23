@@ -1,13 +1,11 @@
 import React from 'react';
-import IconBread from '../../icons/IconBread';
-import IconPasta from '../../icons/IconPasta';
-import IconAvocado from '../../icons/IconAvocado';
-import IconGrape from '../../icons/IconGrape';
-import IconOli from '../../icons/IconOli';
-import IconOrange from '../../icons/iconOrange';
-import IconPotato from '../../icons/IconPotato';
+import IconTemplate from '../../icons/IconTemplate';
 
-import './style.scss'
+import './style.scss';
+
+const images = [
+  'avocado', 'bread', 'pasta', 'potato', 'grape', 'oli', 'orange'
+]
 
 const MainBanner = () => {
 
@@ -21,13 +19,9 @@ const MainBanner = () => {
         <p className="Main-banner__header">Онлайн-сервис покупок для вашего бизнеса</p>
         <p className="Main-banner__text">ЗАПОКУПКИ — полностью цифровой сервис для ИП и юридических лиц</p>
       </div>
-      <IconBread/>
-      <IconPasta/>
-      <IconPotato/>
-      <IconAvocado/>
-      <IconGrape/>
-      <IconOli/>
-      <IconOrange/>
+      {images.map((name) => (
+        <IconTemplate className={`Icon__${name}`}/>
+      ))}
     </div>
   );
 }
